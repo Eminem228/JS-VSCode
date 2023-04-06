@@ -1,0 +1,95 @@
+body, header {
+    width: 100%;
+    background: #211661;
+    font-family: Revalia;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+
+}
+
+h1{
+    color:#faf60e;
+    font-size: 48px;
+}
+
+p{
+    color:rgb(148 218 2);
+    font-size: 16px;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-bottom: 15px;
+    z-index: 2;
+}
+
+.header_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.header_Logo{
+    margin-bottom: 5cm;
+    cursor: pointer;
+    margin-top: 57px;
+    position: relative;
+}
+
+.header_Logo::before {
+    content:"" ;
+    position: absolute;
+    top: 15;
+    left: -17px;
+    width: 12px;
+    height: 13px;
+    border-radius: 5px;
+    background-color: #000000;
+    animation: updown 1.5s infinite;
+    transition: 500ms;
+}
+
+@keyframes updown {
+    0% {
+        top: 15px;
+    }
+    50% {
+        top: 75px;
+    }
+    100% {
+        top: 15px;
+    }
+}
+
+.header_Logo:hover::before {
+    animation: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+#carouselExample{
+    width: 50%;
+}
+canvas {
+    display: block;
+    margin: auto;
+}
+
+.acardion {
+    margin-top: auto;
+
+}
+
+canvas {
+    border: 1px solid white;
+  }
